@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <div class="contenedor-header">
+    <header>
+        <a href="../index.html" onclick="seleccionar()">
+            <div class="logo">
+                <img src="../img/logofarmaciatransmisiones.svg" alt="Logo de Farmacias y Transmisiones" width="120%" style="padding: 5px;">
+            </div>
+        </a>
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html" onclick="seleccionar()">Inicio</a></li>
+                <li><a href="qsomos.html" onclick="seleccionar()">Quiénes Somos</a></li>
+                <li><a href="servicios.html" onclick="seleccionar()">Servicios</a></li>
+                <li><a href="formulario.html" onclick="seleccionar()">Contacto</a></li>
+                <li class="telefono"><i class="fas fa-phone" style="color:#3db1a6;font-size: 22px;margin-left: 100px;padding: 0;"></i><a href="tel:+123456789" style="font-size: 22px;color:#232324;padding: 0;">618 799 536</a></li>
+                <div class="botones-navegacion" >
+                    <a href="compra.html"> <button class="botonnav1" >Comprar</button></a>
+                    <a href="vender.html"><button class="botonnav2" >Vender</button></a>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+<div class="col-md-4">
+  <div class="sesgoabajo"></div>
+  <a id="whatsapp" href="https://wa.me/+34618799536" target="_blank" onmouseover="showCustomTooltip()" onmouseout="hideCustomTooltip()">
+      <img src="../img/whatsapp.svg" alt="WhatsApp" >
+  </a>
+  <div id="custom-tooltip" style="visibility: hidden; position: fixed; bottom: 80px; left: 0;">
+      Contacta con nosotros
+  </div>
+</div>
+    <section class="imagen-con-texto" id="imagen-con-texto">
+      <img src="../img/farmaciafotos4.jpg" class="imagenfoto" alt="Imagen de fondo">
+     
+      <div class="texto-sobre-imagen">
+          <h1>FARMACIAS EN VENTA</h1></br>
+          <h2> Te ayudamos con el traspaso, cambio de domicilio, apertura de otra farmacia…</h2>
+     
+          <h5>En RedPharma nos encargamos de manera directa de la compraventa de oficinas de farmacias en venta de particulares.
+
+           Nos ponemos en marcha para encontrar la más adecuada a tus necesidades y a tu presupuesto o lo que es lo mismo, hacemos compraventa de farmacias sin intermediarios.
+          </h5>          
+      </div>  
+  </section>
+
+
+
+  <div class="localizafarmacia">
+    <h4><i class="fas fa-map-marker-alt"></i>  Localiza la farmacia con la que siempre soñaste</h4>
+  </div>
+    <div class="containerport">
+      
+       
+        <div class="cardport" id="imagenContainer">
+            <img src="../img/malaga.jpg">
+            <h1></h1>
+            <h4 >Farmacia en Málaga</h4>
+            <div >
+              <p>Gestión y mix de ventas mejorables</p>
+              <p>Con posibilidades de crecimiento</p>
+              <p>Buen proyecto de futuro</p>
+            </div>
+            
+        </br>
+           
+    <div class="icon-container">
+        <div>
+          <img src="../img/location.svg" class="icon"> Zona Centro
+        </div>
+        <div>
+          <img src="../img/lupa.svg" class="icon"> Ref: FAR1001
+        </div>
+      </div>
+     
+        <div style="margin-top: 20px;">
+          <img src="../img/billete.png" class="icon" > Facturación
+        </div>
+        <p style="padding-left: 30px;">650.000€-750.000€</p>
+       
+      
+    </div>   
+    <div class="cardport" id="imagenContainer">
+      <img src="../img/madrid.jpg">
+      <h1></h1>
+      <h4>Farmacia en Jaén</h4>
+      <div >
+      <p>Gestión cómoda</p>
+      <p>Ventas estables todo el año</p>
+      <p>Personal Competente  </p>
+      </div>
+  </br>
+     
+<div class="icon-container">
+  <div>
+    <img src="../img/location.svg" class="icon"> Zona Centro
+  </div>
+  <div>
+    <img src="../img/lupa.svg" class="icon"> Ref: FAR1002
+  </div>
+</div>
+
+  <div style="margin-top: 20px;">
+    <img src="../img/billete.png" class="icon" > Facturación
+  </div>
+  <p style="padding-left: 30px;">900.000€-1.000.000€</p>
+ 
+
+</div>         
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Madrid</h4>
+  <div >
+    <p>Buen proyecto de futuro</p>
+      <p>Gestión cómoda</p>
+      <p>Con posibilidades de crecimiento  </p>
+  </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona Norte
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1003
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">550.000€-600.000€</p>
+
+
+</div>   
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Madrid</h4>
+  <div >
+    <p>Alta facturación</p>
+    <p>Con posibilidades de crecimiento</p>
+    <p>Personal Competente  </p>
+    </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona Este
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1004
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">1.400.000€-1.450.000€</p>
+
+
+</div>   
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Málaga</h4>
+  <div >
+    <p>Gestión cómoda</p>
+    <p>Con posibilidad de crecimiento</p>
+    <p>Buen proyecto de futuro  </p>
+    </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona sur
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1005
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">500.000€-550.000€</p>
+
+
+</div>   
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Málaga</h4>
+  <div >
+    <p>Ventas estables todo el año</p>
+    <p>Gestión cómoda</p>
+    <p>Buen proyecto de futuro  </p>
+    </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona Centro
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1006
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">600.000€-650.000€</p>
+
+
+</div>   
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Jaén</h4>
+  <div >
+    <p>Personal competente</p>
+    <p>Local amplio con posibilidad de mejoras</p>
+    <p>Gestión eficiente </p>
+    </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona Centro
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1007
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">850.000€-900.000€</p>
+
+
+</div>  
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Madrid</h4>
+  <div >
+    <p>Ventas estables todo el año</p>
+    <p>Alto porcentaje de venta libre</p>
+    <p>Personal Competente  </p>
+    </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona Norte
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1008
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">1.200.000€-1.250.000€</p>
+
+
+</div>   
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Madrid</h4>
+  <div >
+    <p>Alta rentabilidad</p>
+    <p>Gestión cómoda y eficiente</p>
+    <p>Personal Competente  </p>
+    </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona Norte
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1009
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">600.000€-650.000€</p>
+
+
+</div>  
+<div class="cardport" id="imagenContainer">
+  <img src="../img/madrid.jpg">
+  <h1></h1>
+  <h4>Farmacia en Madrid</h4>
+  <div >
+    <p>Con posibilidades de crecimiento</p>
+    <p>Alta facturación y rentabilidad</p>
+    <p>Alto porcentaje de venta libre  </p>
+    </div>
+</br>
+ 
+<div class="icon-container">
+<div>
+<img src="../img/location.svg" class="icon"> Zona Sur
+</div>
+<div>
+<img src="../img/lupa.svg" class="icon"> Ref: FAR1010
+</div>
+</div>
+
+<div style="margin-top: 20px;">
+<img src="../img/billete.png" class="icon" > Facturación
+</div>
+<p style="padding-left: 30px;">1.100.000€-1.200.000€</p>
+
+
+</div>         
+    </div>
+  </section>
+  
+  <h1 style="text-align: center; color:#1d8bcc;margin-top: 10%; background-color: #fff;margin-bottom: 0;padding-top: 5%;">¿Quieres saber más sobre las farmacias?</h1>
+    <h4 style="text-align: center; color:#353636; background-color: #fff;margin-bottom: 0;padding-top: 20px;">Contacta sin compromiso y solicita información</h4>
+  
+   
+    <section class="contacto" >
+  
+     
+        
+         <div class="columna-derecha">
+         
+      
+         <form target="_blank" action="https://formsubmit.co/cayelepa2@gmail.com" method="POST">
+           <div class="form-group">
+             <label>¿Estás interesado en comprar?</label>
+           </br>
+             <div class="form-check" style="text-align: left;">
+               <input type="radio" class="form-check-input" name="option" value="comprar" id="comprar" required>
+               <label class="form-check-label" for="comprar">Comprar</label>
+             </div>
+           </br>
+       
+           </div>
+           <div class="form-group">
+             <div class="form-row">
+              <div class="col">
+                <input type="text" name="ref" class="form-control" placeholder="Nº Ref farmacia" style="background-color: #d0d4d4;border-radius: 8px;" required>
+              </div>
+            </br>
+               <div class="col">
+                 <input type="text" name="name" class="form-control" placeholder="nombre" style="background-color: #d0d4d4;border-radius: 8px;" required>
+               </div>
+             </br>
+             
+               <div class="col">
+                 <input type="text" name="apellidos" class="form-control" placeholder="apellidos" style="background-color: #d0d4d4;border-radius: 8px;" required>
+               </div>
+             </br>
+               <div class="col">
+                 <input type="email" name="email" class="form-control" placeholder="email" style="background-color: #d0d4d4;border-radius: 8px;" required>
+               </div>      
+             </div>
+           </div>
+           <div class="form-group">        
+             <input type="tel" name="phone" class="form-control" placeholder="teléfono" style="background-color: #d0d4d4;border-radius: 8px;" required>
+           </div>
+           <div class="form-group">
+             <select name="province" class="form-control" id="province" style="background-color: #d0d4d4;border-radius: 8px;" required>
+               <option value="" disabled selected>Selecciona una provincia* </option>
+               <option value="alava">Álava</option>
+               <option value="albacete">Albacete</option>
+               <option value="alicante">Alicante</option>
+               <option value="almeria">Almería</option>
+               <option value="asturias">Asturias</option>
+               <option value="avila">Ávila</option>
+               <option value="badajoz">Badajoz</option>
+               <option value="barcelona">Barcelona</option>
+               <option value="burgos">Burgos</option>
+               <option value="caceres">Cáceres</option>
+               <option value="cadiz">Cádiz</option>
+               <option value="cantabria">Cantabria</option>
+               <option value="castellon">Castellón</option>
+               <option value="ciudadreal">Ciudad Real</option>
+               <option value="cordoba">Córdoba</option>
+               <option value="cuenca">Cuenca</option>
+               <option value="girona">Girona</option>
+               <option value="granada">Granada</option>
+               <option value="guadalajara">Guadalajara</option>
+               <option value="guipuzcoa">Guipúzcoa</option>
+               <option value="huelva">Huelva</option>
+               <option value="huesca">Huesca</option>
+               <option value="jaen">Jaén</option>
+               <option value="la_coruna">La Coruña</option>
+               <option value="la_rioja">La Rioja</option>
+               <option value="las_palmas">Las Palmas</option>
+               <option value="leon">León</option>
+               <option value="lleida">Lleida</option>
+               <option value="lugo">Lugo</option>
+               <option value="madrid">Madrid</option>
+               <option value="malaga">Málaga</option>
+               <option value="melilla">Melilla</option>
+               <option value="murcia">Murcia</option>
+               <option value="navarra">Navarra</option>
+               <option value="ourense">Ourense</option>
+               <option value="palencia">Palencia</option>
+               <option value="pontevedra">Pontevedra</option>
+               <option value="salamanca">Salamanca</option>
+               <option value="santa_cruz_de_tenerife">Santa Cruz de Tenerife</option>
+               <option value="segovia">Segovia</option>
+               <option value="sevilla">Sevilla</option>
+               <option value="soria">Soria</option>
+               <option value="tarragona">Tarragona</option>
+               <option value="teruel">Teruel</option>
+               <option value="toledo">Toledo</option>
+               <option value="valencia">Valencia</option>
+               <option value="valladolid">Valladolid</option>
+               <option value="vizcaya">Vizcaya</option>
+               <option value="zamora">Zamora</option>
+               <option value="zaragoza">Zaragoza</option>
+             </select>
+           </div>
+          
+          
+           <div class="form-group">
+             <textarea placeholder="Escribe tu consulta" class="form-control" name="message" rows="5" style="background-color: #d0d4d4;border-radius: 8px;" required></textarea>
+           </div>
+           <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar Formulario</button>
+         </form>
+       </div>
+      
+     </section>  
+     <footer>
+      <a href="#imagen-con-texto" class="arriba">
+          <i class="fa-solid fa-angles-up"></i>
+      </a>
+      
+      <div class="row" >
+        <div class="col-2 col-md-4 ">
+          <i class="fas fa-map-marker-alt fa-2x" style="color:#3db1a6;"></i>
+            <p style="font-size: 20px;"> Madrid</p>  
+        </div>
+        <div class="col-3 col-md-4">
+          <i class="fa fa-envelope fa-2x" aria-hidden="true"  style="color:#3db1a6;padding: 0;"></i>
+          <p style="font-size: 20px;"> administracionfarma@gmail.com</p>
+      </div>
+        <div class="col-2 col-md-4">
+          <i class="fas fa-phone fa-2x" style="color:#3db1a6;"></i>
+          <p style="font-size: 20px;"></a> 618 799 536</p>
+      </div>
+      <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-1 mb-3 ">
+            <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+              <i class="fa-brands fa-facebook-f fa-2x"></i>
+            </a>
+          </div>
+          <div class="col-1 mb-3">
+            <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+              <i class="fa-brands fa-linkedin-in fa-2x"></i>
+            </a>
+          </div>
+          <div class="col-1 mb-3">
+            <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    
+      <div class="nombre-ano">
+          <p>Cayetano Ledesma &copy; 2023</p>
+      </div>
+    </footer>
+<script>
+
+  </script>
+
+
+
+    
+        
+
+
+    
+<script src="../script1.js"></script> 
+    
+</body>
+</html>
+
+
+

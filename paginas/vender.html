@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <a href="../index.html" onclick="seleccionar()">
+                <div class="logo">
+                    <img src="../img/logofarmaciatransmisiones.svg" alt="Logo de Farmacias y Transmisiones" width="120%" style="padding: 5px;">
+                </div>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="qsomos.html" onclick="seleccionar()">Quiénes Somos</a></li>
+                    <li><a href="servicios.html" onclick="seleccionar()">Servicios</a></li>
+                    <li><a href="formulario.html" onclick="seleccionar()">Contacto</a></li>
+                    <li class="telefono"><i class="fas fa-phone" style="color:#3db1a6;font-size: 22px;margin-left: 100px;padding: 0;"></i><a href="tel:+123456789" style="font-size: 22px;color:#232324;padding: 0;">618 799 536</a></li>
+                    <div class="botones-navegacion" >
+                        <a href="compra.html"> <button class="botonnav1" >Comprar</button></a>
+                        <a href="vender.html"><button class="botonnav2" >Vender</button></a>
+                    </div>
+                </ul>
+            </nav>
+    
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <div class="col-md-4">
+        <div class="sesgoabajo"></div>
+        <a id="whatsapp" href="https://wa.me/+34618799536" target="_blank" onmouseover="showCustomTooltip()" onmouseout="hideCustomTooltip()">
+            <img src="../img/whatsapp.svg" alt="WhatsApp" >
+        </a>
+        <div id="custom-tooltip" style="visibility: hidden; position: fixed; bottom: 80px; left: 0;">
+            Contacta con nosotros
+        </div>
+    </div>
+    <section class="imagen-con-texto" id="imagencontexto">
+        <img src="../img/farm.png" class="imagenfoto" alt="Imagen de fondo">
+       
+        <div class="texto-sobre-imagen">
+            <h1>¿QUIERES VENDER TU FARMACIA?</h1>
+            <h2>Ha llegado el momento de dar el paso</h2>
+            <h5>Tu farmacia es tu vida. Apuestas por ella cada día, pero crees que ha llegado la hora del cambio. </br>¡Encontraremos al mejor comprador para que ambos veáis cumplidas vuestras expectativas!
+            </br></br> Dinos, ¿cuál es tu motivación?</h5>          
+        </div>
+        <div class="botones-container">
+            <a href="#jubilar"><button class="boton boton-izquierda">Me jubilo</button></a>
+            <a href="#salir"><button class="boton boton-central">Salir del sector</button></a>
+            <a href="#familiar"><button class="boton boton-derecha">Transmisión familiar</button></a>
+        </div>
+        
+       
+    </section>
+    
+    <section class="seccion-con-titulo" id="jubilar">
+        <div class="contenedor">
+        <div class="titulo">
+           <h1>AHORA QUIERO DISFRUTAR DE MI TIEMPO</h1> 
+        </div>
+        <div class="texto">
+            “Me jubilo”
+        </div>
+        </div>
+        <div class="fila">
+            <div class="texto-izquierda">
+               <p class="parrafo"> La jubilación es un momento especial en la vida de cualquier persona, un período en el que finalmente puedes disfrutar del tiempo libre que tanto has anhelado. 
+
+               </br>En Farmacia & Trasmisiones, comprendemos que tu farmacia no solo es tu negocio, sino también una parte integral de tu vida y tu legado.</br> Es por eso que te ofrecemos una solución diseñada específicamente para ti</p>
+               <a href="formulario.html"><button class="botonapartados1 ">Contacta con nosotros</button></a>
+        </div>
+            <div class="imagen-derecha">
+                <img src="../img/jubilacion.jpg" style="width: 100%;height: 100%;"alt="Imagen a la Derecha">
+            </div>
+        </div>
+    </section>
+    <section class="seccion-con-titulo1 " id="salir">
+        <div class="contenedor">
+        <div class="titulo">
+            <h1>QUIERO SALIR DEL SECTOR</h1> 
+         </div>
+         <div class="texto">
+            “Después de varios años, siento que necesito un cambio”
+         </div>
+        </div>
+       
+        <div class="fila" >           
+            <div class="imagen-izquierda" ">
+                <img src="../img/cambios.png" style="width: 100%;height: 100%;" alt="Imagen a la Derecha">
+            </div>
+            <div class="texto-derecha">
+                <p class="parrafo1">La búsqueda de nuevas posibilidades profesionales es otro motivo poderoso para la venta de una farmacia. Algunos propietarios pueden sentir que han alcanzado un punto en su carrera en el que desean explorar otros aspectos de la industria y probar suerte en un campo completamente diferente. </br> Al vender la farmacia, pueden abrirse a oportunidades profesionales emocionantes</p>
+                <a href="formulario.html"><button class="botonapartados ">Contacta con nosotros</button></a>
+            </div>
+           
+        </div>
+        
+    </section>
+  
+    <section class="seccion-con-titulo1" id="familiar">
+        <div class="contenedor">
+        <div class="titulo">
+           <h1>UNA TRASMISION FAMILIAR PARA UN FUTURO PROMETEDOR EN LA FARMACIA</h1> 
+        </div>
+        <div class="texto">
+            “Quiero entregar la farmacia a otro miembro de mi familia”
+        </div>
+        </div>
+        <div class="fila">
+            <div class="texto-izquierda">
+               <p class="parrafo"> En Farmacia & Transmisiones, somos plenamente conscientes de que la transmisión de una farmacia a un miembro de la familia representa un hito trascendental en la continuidad de tu negocio. </br>Este proceso es mucho más que una simple transacción comercial, es un momento en el que se entrelazan las emociones y las expectativas, y se abren las puertas a la preservación de tu legado farmacéutico</p>
+               <a href="formulario.html"><button class="botonapartados1 ">Contacta con nosotros</button></a>
+            </div>
+            <div class="imagen-derecha">
+                <img src="../img/transmision.png" style="width: 100%;height: 100%;" alt="Imagen a la Derecha">
+            </div>
+        </div>
+    </section>
+    
+</section>
+<footer>
+    <a href="#imagencontexto" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    
+    <div class="row" >
+      <div class="col-2 col-md-4 ">
+        <i class="fas fa-map-marker-alt fa-2x" style="color:#3db1a6;"></i>
+          <p style="font-size: 20px;"> Madrid</p>  
+      </div>
+      <div class="col-3 col-md-4">
+        <i class="fa fa-envelope fa-2x" aria-hidden="true"  style="color:#3db1a6;padding: 0;"></i>
+        <p style="font-size: 20px;"> administracionfarma@gmail.com</p>
+    </div>
+      <div class="col-2 col-md-4">
+        <i class="fas fa-phone fa-2x" style="color:#3db1a6;"></i>
+        <p style="font-size: 20px;"></a> 618 799 536</p>
+    </div>
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-1 mb-3 ">
+          <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+            <i class="fa-brands fa-facebook-f fa-2x"></i>
+          </a>
+        </div>
+        <div class="col-1 mb-3">
+          <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+          </a>
+        </div>
+        <div class="col-1 mb-3">
+          <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+    <div class="nombre-ano">
+        <p>Cayetano Ledesma &copy; 2023</p>
+    </div>
+  </footer>
+
+    
+  
+  
+  
+
+
+    
+<script src="../script1.js"></script> 
+    
+</body>
+</html>
+
+
+

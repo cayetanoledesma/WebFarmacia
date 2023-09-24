@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <a href="../index.html" onclick="seleccionar()">
+                <div class="logo">
+                    <img src="../img/logofarmaciatransmisiones.svg" alt="Logo de Farmacias y Transmisiones" width="120%" style="padding: 5px;">
+                </div>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="qsomos.html" onclick="seleccionar()">Quiénes Somos</a></li>
+                    <li><a href="servicios.html" onclick="seleccionar()">Servicios</a></li>
+                    <li><a href="formulario.html" onclick="seleccionar()">Contacto</a></li>
+                    <li class="telefono"><i class="fas fa-phone" style="color:#3db1a6;font-size: 22px;margin-left: 100px;padding: 0;"></i><a href="tel:+123456789" style="font-size: 22px;color:#232324;padding: 0;">618 799 536</a></li>
+                    <div class="botones-navegacion" >
+                        <a href="compra.html"> <button class="botonnav1" >Comprar</button></a>
+                        <a href="vender.html"><button class="botonnav2" >Vender</button></a>
+                    </div>
+                </ul>
+            </nav>
+    
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <div class="col-md-4">
+        <div class="sesgoabajo"></div>
+        <a id="whatsapp" href="https://wa.me/+34618799536" target="_blank" onmouseover="showCustomTooltip()" onmouseout="hideCustomTooltip()">
+            <img src="../img/whatsapp.svg" alt="WhatsApp" >
+        </a>
+        <div id="custom-tooltip" style="visibility: hidden; position: fixed; bottom: 80px; left: 0;">
+            Contacta con nosotros
+        </div>
+    </div>
+    <section class="imagen-con-texto">
+        <img src="../img/servicios.png"  alt="Imagen de fondo">
+       
+        <div class="texto-sobre-imagenservicios">
+            <h1>SERVICIOS</h1>
+            <h2>"No tienes que preocuparte por nada"</h2>
+            <h5>¡Confía en nosotros para alcanzar tus metas y dar vida a tu visión farmacéutica!</br> Tu éxito es nuestra misión.
+            </h5>          
+        </div>
+       
+        
+       
+    </section>
+   
+    <section class="seccion-con-tituloservicios">
+        <div class="contenedorservicios">
+            <div class="tituloservicios">
+               <h1>NUESTROS SERVICIOS</h1> 
+            </div>
+            <div class="textoservicios">
+                “Te ofrecemos una serie de servicios que te ayudarán a conseguir tus metas con tranquilidad”
+            </div>
+            </div>
+        <div class="filaservicios">
+            <div class="texto-izquierdaservicios" >
+                <p class="parrafoservicios" style="font-weight: bold;color:#1d8bcc"><i class="fas fa-comments fa-2x"></i>  ASESORAMIENTO</p>
+               <p class="parrafoservicios">
+               Ofrecemos un servicio de asesoramiento integral para farmacias en el proceso de compra y venta. Nuestro equipo de expertos está aquí para brindarte orientación y apoyo en cada paso de este importante proceso.
+
+               </br><strong>¿Estás pensando en comprar una farmacia?</strong> Te ayudamos a encontrar la mejor opción que se adapte a tus necesidades y metas comerciales. Desde la búsqueda de oportunidades hasta la evaluación de propiedades, estamos contigo en todo momento.
+               
+            </br><strong>¿Quieres vender tu farmacia?</strong> Déjanos encargarnos de todo el proceso. Desde la valoración de tu negocio hasta la negociación y el cierre de la venta, te proporcionamos una solución personalizada.
+               
+               Nuestra misión es facilitar la transición de propiedad de farmacias de manera fluida y exitosa.   </br>Contáctanos hoy mismo y descubre cómo podemos hacer que tu proceso de compra o venta sea un éxito</p>
+               <a href="formulario.html"> <button class="botonapartados1servicios ">Más información</button></a>
+        </div>
+            <div class="imagen-derechaservicios">
+                <img src="../img/asesoramiento.svg" style="width: 80%;height: 80%;" alt="Imagen a la Derecha">
+            </div>
+        </div>
+    </section>
+    <section class="seccion-con-tituloservicios" >
+       
+       
+        <div class="filaservicios" style="background-color: #d7d5d5;">           
+            <div class="imagen-izquierdaservicios" >
+                <img src="../img/contabilidad.svg" style="width: 80%;height: 80%;" alt="Imagen a la Derecha">
+            </div>
+            <div class="texto-derechaservicios">
+                <p class="parrafo1servicios" style="font-weight: bold;color:#1d8bcc"><i class="fas fa-calculator fa-2x" ></i>  CONTABILIDAD FISCAL Y LABORAL</p>
+                <p class="parrafo1servicios">  Entendemos que la gestión de una farmacia implica una serie de desafíos únicos en términos de contabilidad fiscal y laboral. Nos enorgullece ofrecer soluciones especializadas diseñadas para aliviar esa carga y permitirte centrarte en lo que haces mejor: cuidar de tus pacientes.
+
+                </br> Nuestros Servicios Incluyen:
+                    
+            </br><strong>Contabilidad Fiscal:</strong> Nuestro equipo de expertos contables se encargará de mantener tus registros financieros en perfecto orden, asegurando que cumplas con todas las obligaciones fiscales y normativas vigentes. Esto incluye la declaración de impuestos, la gestión de deducciones y créditos fiscales, y la optimización de tu carga tributaria.
+                    
+            </br><strong>Gestión Laboral:</strong> Las complejas leyes laborales pueden ser un desafío para cualquier negocio, y las farmacias no son una excepción. Te brindamos asesoramiento sobre la contratación y gestión de personal, la elaboración de nóminas, la planificación de recursos humanos y la resolución de problemas laborales.
+                    
+            </br><strong>Asesoramiento Estratégico:</strong> No solo nos encargamos de las tareas administrativas, sino que también te ofrecemos asesoramiento estratégico para mejorar la rentabilidad de tu farmacia. Te ayudamos a identificar áreas de mejora y oportunidades de crecimiento.
+                    
+        </br><strong>Cumplimiento Normativo:</strong> Mantenemos tu farmacia al día con todas las regulaciones y normativas aplicables, garantizando que no haya sorpresas desagradables en el horizonte.</p>
+        <a href="formulario.html"><button class="botonapartadosservicios ">Más información</button></a>
+            </div>
+           
+        </div>
+        
+    </section>
+    
+    
+    <section class="seccion-con-tituloservicios">
+        
+        <div id="traspasofarmacia"class="filaservicios">
+            <div class="texto-izquierdaservicios" >
+                <p class="parrafoservicios" style="font-weight: bold;color:#1d8bcc"><i class="fas fa-exchange-alt fa-2x" ></i> TRASPASO DE FARMACIA</p>
+               <p class="parrafoservicios">
+                Entendemos que el traspaso de una farmacia es un momento crucial tanto para compradores como para vendedores. Nuestra experiencia en el mercado farmacéutico nos permite ofrecer servicios de traspaso de farmacia de alta calidad que hacen que el proceso sea eficiente y sin complicaciones.
+
+<br><strong>¿Eres propietario de una farmacia y estás considerando venderla?</strong> Déjanos guiarte a través de todo el proceso. Desde la valoración precisa de tu negocio hasta la búsqueda de compradores calificados y la negociación de un acuerdo justo, estamos aquí para asegurarnos de que tu transacción sea un éxito
+
+<br><strong>¿Estás interesado en comprar una farmacia? </strong>Te proporcionamos acceso a una amplia gama de oportunidades de compra. Nuestro equipo de expertos te ayudará a encontrar la farmacia adecuada que se ajuste a tus objetivos comerciales y financieros.
+
+<br>Nuestra dedicación a la excelencia en el asesoramiento farmacéutico nos convierte en tu socio ideal en el traspaso de farmacias. Simplificamos el proceso y te brindamos la confianza que necesitas en esta importante etapa de tu carrera</p>
+<a href="formulario.html"><button class="botonapartados1servicios ">Más información</button></a>
+        </div>
+            <div class="imagen-derechaservicios">
+                <img src="../img/cambiofarmacia.jpg" style="width: 80%;height: 80%;" alt="Imagen a la Derecha">
+            </div>
+        </div>
+    </section>
+    <section class="seccion-con-tituloservicios" >
+       
+       
+        <div class="filaservicios" style="background-color: #d7d5d5;">           
+            <div class="imagen-izquierdaservicios" >
+                <img src="../img/dinerobg.png" style="width: 80%;height: 100%;" alt="Imagen a la Derecha">
+            </div>
+            <div class="texto-derechaservicios">
+                <p class="parrafo1servicios" style="font-weight: bold;color:#1d8bcc"><i class="fas fa-balance-scale-right fa-2x"></i> VALORACIÓN DE FARMACIAS</p>
+                <p class="parrafo1servicios"> Si eres propietario de una farmacia y estás considerando <strong>vender</strong>, nuestra valoración te proporcionará una estimación precisa del valor de mercado de tu negocio. Esto te permitirá establecer un precio justo y atraer a compradores calificados, maximizando así tus oportunidades de venta.
+
+                </br>Si estás interesado en <strong>comprar </strong>una farmacia, nuestra valoración te ayudará a evaluar si la inversión es adecuada para tus objetivos financieros. Identificamos oportunidades de compra que se alinean con tu presupuesto y expectativas comerciales, brindándote la confianza necesaria para tomar decisiones informadas.
+                    
+            </br>Nuestro equipo de expertos en valoración de farmacias utiliza metodologías sólidas y datos de mercado actualizados para brindarte una valoración precisa y objetiva. Ya sea que estés buscando comprar, vender o simplemente evaluar tu posición en el mercado farmacéutico, estamos aquí para ayudarte a tomar la mejor decisión</p>
+            <a href="formulario.html"><button class="botonapartadosservicios ">Más información</button></a>
+            </div>
+           
+        </div>
+        
+    </section>
+    <section class="seccion-con-tituloservicios" style="margin-bottom: 50px;">
+        
+        <div class="filaservicios">
+            <div class="texto-izquierdaservicios" >
+                <p class="parrafoservicios" style="font-weight: bold;color:#1d8bcc"><i class="fas fa-exchange-alt fa-2x" ></i> REFORMA DE FARMACIA</p>
+               <p class="parrafoservicios">
+                Si eres propietario de una farmacia y estás considerando una reforma, nuestra valoración te ayudará a comprender el valor actual de tu negocio y cómo una reforma estratégica puede aumentarlo aún más. Te proporcionaremos recomendaciones específicas sobre las áreas de tu farmacia que pueden beneficiarse de una actualización y cómo esto puede traducirse en un mayor valor de mercado.
+
+            </br>Para los compradores interesados en adquirir una farmacia, nuestra valoración destacará las oportunidades de inversión que incluyen la posibilidad de reforma. Identificamos las farmacias con potencial de mejora y te guiamos en la evaluación de los costos y beneficios de la reforma.
+
+        </br>Nuestro equipo de expertos en valoración y reforma de farmacias está comprometido en ayudarte a tomar decisiones informadas que maximicen el valor de tu inversión </p>
+        <a href="formulario.html"><button class="botonapartados1servicios ">Más información</button></a>
+        </div>
+            <div class="imagen-derechaservicios">
+                <img src="../img/obra.png" style="width: 80%;height: 80%;" alt="Imagen a la Derecha">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        
+        <div class="row" >
+          <div class="col-2 col-md-4 ">
+            <i class="fas fa-map-marker-alt fa-2x" style="color:#3db1a6;"></i>
+              <p style="font-size: 20px;"> Madrid</p>  
+          </div>
+          <div class="col-3 col-md-4">
+            <i class="fa fa-envelope fa-2x" aria-hidden="true"  style="color:#3db1a6;padding: 0;"></i>
+            <p style="font-size: 20px;"> administracionfarma@gmail.com</p>
+        </div>
+          <div class="col-2 col-md-4">
+            <i class="fas fa-phone fa-2x" style="color:#3db1a6;"></i>
+            <p style="font-size: 20px;"></a> 618 799 536</p>
+        </div>
+        <div class="container mt-4">
+          <div class="row justify-content-center">
+            <div class="col-1 mb-3 ">
+              <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+                <i class="fa-brands fa-facebook-f fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-1 mb-3">
+              <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-1 mb-3">
+              <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+        <div class="nombre-ano">
+            <p>Cayetano Ledesma &copy; 2023</p>
+        </div>
+      </footer>
+      
+      
+      
+      
+
+
+
+    
+        
+
+
+    
+<script src="../script1.js"></script> 
+    
+</body>
+</html>
+
+
+

@@ -1,0 +1,1730 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;800$display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+ }
+ /* Estilo predeterminado de las provincias */
+path {
+    fill: #7c7c7c; /* Color inicial de las provincias (gris) */
+    stroke: #ffffff; /* Color del borde */
+    stroke-width: 2; /* Ancho del borde */
+    transition: fill 0.3s; /* Efecto de transición suave para el color */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+
+/* Estilo al pasar el ratón por encima de una provincia */
+path:hover {
+    fill: green; /* Cambia el color al verde cuando el cursor está encima */
+   
+}
+
+/* Estilo para el nombre de la provincia */
+text {
+    font-size: 80px; /* Tamaño de fuente del nombre */
+    fill: black; /* Color del nombre en negro */
+    pointer-events: none; /* Evita que el texto interfiera con eventos del ratón */
+    display: none; /* Inicialmente oculto */
+}
+
+/* Estilo para mostrar el nombre de la provincia al pasar el ratón por encima */
+path:hover + text {
+    display: block;
+    font-size: 50px; /* Muestra el nombre cuando el cursor está encima */
+}
+
+
+ body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+ }
+
+ 
+ html{
+    scroll-behavior: smooth;
+ }
+
+ header{
+    padding: 0px;
+    margin: 0px;
+ }
+
+.logo img{
+    width: 250px;
+    padding-left: 20px;
+}
+#whatsapp img{
+    width: 60px;
+    height: 60px;
+}
+#whatsapp {
+    position: fixed; /* Hace que el elemento sea fijo en la ventana */
+    bottom: 20px;    /* Ajusta la distancia desde la parte inferior */
+    left: 0;         /* Ancla el elemento a la izquierda */
+    z-index: 999;    /* Ajusta la capa en la que se muestra el icono */
+  }
+
+  #custom-tooltip {
+    visibility: hidden;
+    position: fixed;
+    bottom: 80px;
+    left:0;
+    margin-left: 10px;
+    background-color: rgba(100,205,138,255); /* Color de fondo negro */
+    color: rgb(243, 248, 243); /* Color de texto verde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 20px; /* Tamaño de fuente */
+    z-index: 1000; /* Ajusta la capa en la que se muestra el cuadro de mensaje */
+  }
+
+ .contenedor-header{
+    background: #fffffff2;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top:0;
+    left: 0;
+    z-index: 99;
+ }
+ 
+ .contenedor-header header{
+    max-width: 100%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+   
+   
+ 
+ }
+ 
+ .contenedor-header header ul{
+    display: flex;
+    list-style:none;
+    align-items: center;
+    margin-bottom: 0;
+ 
+ }
+ 
+ .contenedor-header header nav ul li a {
+    color: #857d7d; /* Color inicial de los enlaces */
+    font-size: 24px; /* Tamaño inicial del texto */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: color 0.2s, font-size 0.2s; 
+    margin: 0 20px;/* Transiciones para cambio de color y tamaño */
+    font-size: 22px;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #007bff; /* Cambia el color al pasar el ratón por encima */
+    font-size: 27px; /* Aumenta el tamaño al pasar el ratón por encima */
+}
+
+.contenedor-header header nav ul li a:active,
+.contenedor-header header nav ul li a:focus {
+    color: #007bff; /* Cambia el color al hacer clic o enfocar */
+    font-size: 20px; /* Puedes ajustar el tamaño al hacer clic o enfocar si lo deseas */
+    outline: none; /* Elimina el contorno predeterminado al hacer clic o enfocar */
+}
+
+/*MENU DESPLEGABLE*/
+
+ .nav-responsive{
+    background-color:#5eb7d200;
+    color:#007bff;
+
+    cursor: pointer;
+    display: none;
+   
+    
+ 
+ }
+ 
+
+ .botonnav1{
+    width: 100px;
+    background-color: #3db1a6;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+   
+}
+.botonnav1:hover {
+    background-color: #cfcfd200;
+    transform: translateY(-5px);
+    color:#04b7b7;
+    border:1px solid #04b7b7;
+}
+.botonnav2{
+    width: 100px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1d8bcc;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+   
+}
+.botonnav2:hover {
+    background-color: #f6f5f800;
+    transform: translateY(-5px);
+    color:#1d8bcc;
+    border:1px solid #1d8bcc;
+}
+p{
+    font-size: 24px;
+   
+}
+
+
+ /* PANTALLA INICIO */
+ 
+ .inicio{
+    width: 100% ;
+    height: 950px ;
+    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(img/1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color:  #faf6f6;
+    text-align:center;
+   
+}
+
+.inicio .textos {
+    margin: 10% ;
+    color:#faf6f6;
+    text-align: left;
+
+}
+
+
+
+.inicio .titulo {
+    font-size: 85px ;
+    
+}
+
+.inicio .subtitulo {
+    font-size: 64px ;
+    font-weight: 300;
+    margin-bottom: 32px ;
+    
+}
+.inicio p{
+    font-size: 24px;
+   
+   
+   
+}
+
+
+.botones {
+    display: flex;
+    gap: 40px; /* Espacio entre los botones */
+   
+}
+
+
+
+
+.boton1 {
+    width: 300px;
+    background-color: #3db1a6;
+    color: white;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.boton1:hover {
+    background-color: #f9f9fa;
+    transform: translateY(-5px);
+    color:#04b7b7;
+}
+
+.boton2 {
+    width: 300px;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1d8bcc;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+.boton2:hover {
+    background-color: #f6f5f8;
+    transform: translateY(-5px);
+    color:#1d8bcc;
+}
+
+/*SEPARACIONES*/
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh  100vw ;
+    border-style:solid;
+    border-color:transparent transparent #fff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+  
+    border-color: #fff transparent transparent transparent;
+}
+/*TRASPASAR FARMACIA FOTOS Y TEXTO*/
+.boton4{
+    width: auto;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #04b7b7;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-top: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+   }
+  
+
+.boton4:hover {
+    background-color: #faf9fd;
+    transform: translateY(-5px);
+    color:#04b7b7;
+    border:1px solid #04b7b7;
+   
+}
+.venta{
+    font-size: 55px ;  
+ }
+ .acerca-de{
+    margin-bottom: 100px;
+}
+
+ #cards10{
+   
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+/* Estilos base del card10 */
+.card10 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+   
+  }
+  
+  /* Estilos de la imagen */
+  .card10 .card-image {
+    width: 100%;
+    height:500px;
+    transition: transform 0.3s;
+  }
+  
+  /* Estilos del contenido (inicialmente oculto) */
+  .card10 .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    
+    background-color: rgb(4, 183, 183); /* Color de fondo al pasar el cursor */
+    transform: translateY(100%); /* Inicialmente, ocultamos el contenido debajo */
+    transition: transform 0.3s;
+    padding: 10px;
+  }
+  
+  /* Estilo del card10 al hacer hover */
+  .card10:hover .card-image {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+  }
+  
+  .card10:hover .card-content {
+    transform: translateY(0); /* Muestra el contenido al hacer hover */
+  }
+  
+  /* Estilos del texto y título */
+  .card10 h3,
+  .card10 p {
+    margin: 0;
+    color: white; /* Color del texto */
+    text-align: center;
+    
+  }
+
+
+  
+/*CONTENEDOR DE FOTOS FARMACIAS*/
+
+.container{
+    margin-top: 100px;
+}
+.container .card-body{
+    padding: 0;
+}
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 120%;
+    object-fit:cover;
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.901);
+}
+.encima1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.439);
+}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+}
+
+
+.cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.card1{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Oculta el contenido que excede el límite */
+    position: relative; /* Añade posición relativa para el pseudo-elemento */
+    
+}
+.container .card{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Oculta el contenido que excede el límite */
+    position: relative;
+    width: 350px;
+    height: 300px; 
+    background: #a4a7a77d;/* Añade posición relativa para el pseudo-elemento */
+    
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 100%; /* Inicialmente, ocultamos el fondo debajo de la tarjeta */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #04b7b757; /* Color de fondo al pasar el cursor */
+    transition: top 0.3s; /* Transición de 0.3 segundos de abajo hacia arriba */
+   
+   
+}
+.card:hover {
+    color: white; /* Cambia el color del texto a blanco */
+    
+}
+/* Estilo de las tarjetas al pasar el cursor */
+.card:hover::before {
+    top: 0; /* Muestra el fondo al pasar el cursor */
+    
+    
+}
+.cards img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+/* MAPA*/
+.mapa-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+  }
+
+  .mapa {
+    flex: 1;
+    
+    margin-top: 200px;
+    
+  }
+
+  .texto {
+    flex: 1;
+    padding-left: 100px;
+  }
+  .texto h2{
+    font-size: 55px ;
+    margin-bottom: 50px;
+  }
+   .texto p{
+        font-size: 24px;
+    
+   }
+   .boton3{
+    width: 200px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #04b7b7;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+   }
+   
+   
+  
+
+.boton3:hover {
+    background-color: #f9f8fc;
+    transform: translateY(-5px);
+    color:#04b7b7;
+    border:1px solid #04b7b7;
+   
+}
+   
+   
+   
+  
+ .mapa img{
+    width: 100%;
+    height: 100%;
+   
+  
+}
+
+
+  /* SERVICIOS */
+
+.flip-card {
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  /* Estilos de la parte frontal de la tarjeta */
+  .flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #a4a7a700;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-card-front img{
+    object-fit: cover;
+   width: 415px;
+  }
+  /* Estilos de la parte trasera de la tarjeta (inicialmente oculta) */
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+  
+  /* Estilo del card al hacer hover */
+  .card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+.fondo {
+    height: 1500px;
+    position: relative;
+    background:linear-gradient(rgba(5, 7, 12, 0.709), rgba(5, 7, 12, 0.747)),url(img/1.jpg);
+   
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+
+.titulo-patrocinadores, .subtitulo-patrocinadores {
+    color: #f9fbfb;
+    text-align: center;
+}
+
+.titulo-patrocinadores{
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.subtitulo-patrocinadores{
+    font-size: 55px;
+    font-weight: 300;
+    
+}
+
+/* FORMULARIO */ 
+.contacto{
+   
+    width: 100% ;
+    height: 950px ;
+   /* background:linear-gradient(rgba(174, 174, 175, 0.75), rgba(179, 179, 180, 0.75)),url(img/1.jpg);*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color:  #fff;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+  
+.columna-izquierda {
+    width: 40%;
+    height: 80%;
+    left: 0;
+    color: #757575;
+    text-align: left; /* Añadir esta línea para justificar el texto a la izquierda */
+    padding: 6%;
+    margin-right: 50px;
+    flex: 1;
+}
+  /* Estilos para la columna de la derecha (formulario) */
+  .columna-derecha {
+    width: 25%; /* Ajusta el ancho según tus necesidades */
+    background:linear-gradient(#0a0a0a, #353434cf)  ;
+    margin: 0 20px 20px 0; /* Ajusta los márgenes según tus necesidades */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+
+  .form-group {
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  label,input{
+    color:#faf9f9;
+    text-align: left;
+    font-size: 18px;
+  
+    
+  }
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-control:hover {
+    border-color: #acaeac;
+  }
+  
+
+  .contacto .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0a0a0a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  
+  .contacto .btn:hover {
+    background-color: #04b7b7;
+    color:#0d0d0d;
+    
+  }
+  
+
+  /*COMPRAR Y VENDER FINAL*/
+  .fondofinal {
+    height: auto;
+    position: relative;
+    background:linear-gradient(rgba(5, 7, 12, 0.709), rgba(5, 7, 12, 0.747)),url(img/1.jpg);
+   
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+   
+}
+.botonesfinal {
+    display: flex;
+   padding-top: 100px;
+    align-items: center;
+    padding-left: 100px;
+    gap: 40px; 
+    
+}
+
+.boton1final {
+    width: 300px;
+    background-color: #3db1a6;
+    color: white;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.boton1final:hover {
+    background-color: #f9f9fa;
+    transform: translateY(-5px);
+    color:#04b7b7;
+}
+.boton2final {
+    width: 300px;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1d8bcc;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+.boton2final:hover {
+    background-color: #f6f5f8;
+    transform: translateY(-5px);
+    color:#1d8bcc;
+}
+
+/*FOOTER*/
+  footer{
+    background-color: #252A2E;
+    color:#fff;
+    padding: 50px 0 0px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #409bb7;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px ;
+    
+}
+
+footer i{
+    color:#fbfcfc;
+}
+footer i:hover{
+    color:#04b7b7;
+}
+
+.nombre-ano {
+    background-color: #222; /* Color de fondo para el nombre y el año */
+    padding: 10px 0; /* Espaciado interno */
+}
+
+.nombre-ano p {
+    margin: 0; /* Eliminar margen para centrar verticalmente */
+}
+
+
+
+ /* RESPONSIVE */
+ @media screen and (max-width:1401px){
+   
+    /*MENU*/
+    .mapa {
+        flex: 1;
+        width: 500px;
+        margin-top: 200px;
+        
+      }
+    .contenedor-header header nav ul li a{
+    padding: 5px;
+    font-size: 22px;
+    padding: 0;
+    margin: 10px;
+    }
+    .telefono{
+    display:none;
+    }
+    .inicio{
+        width: 100% ;
+        height: 750px;
+    }
+    .inicio .textos {
+        margin: 5% ;
+        color:#faf6f6;
+        text-align: left;
+
+    
+    }
+    
+    
+    
+    .inicio .titulo {
+        font-size: 65px ;
+        
+    }
+    
+    .inicio .subtitulo {
+        font-size: 50px ;
+        font-weight: 300;
+        margin-bottom: 32px ;
+        
+    }
+    .inicio p{
+        font-size: 24px;
+       
+       
+       
+    }
+    .botonnav1{
+        width: 100px;
+        background-color: #3db1a6;
+        color: white;
+        padding: 5px 5px;
+        border: none;
+        border-radius: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+        text-decoration: none;
+      
+       
+    }
+    .botonnav2{
+        width: 100px;
+        padding: 5px 5px;
+        border: none;
+        border-radius: 15px;
+        background-color: #1d8bcc;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        text-decoration: none;
+       
+    }
+
+    .boton1 {
+        width: 300px;
+        background-color: #3db1a6;
+        color: white;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: background-color 0.3s, transform 0.3s;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    .boton2 {
+        width: 300px;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #1d8bcc;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: background-color 0.3s, transform 0.3s;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    /*TRASPASO DE FARMACIAS*/
+    .venta{
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .ventap{
+        font-size: 20px;
+    }
+   .fondo{
+    margin-bottom: 100px;
+   } 
+
+    /*MAPA*/
+    .mapa-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50%;
+       
+      
+       /* Apila los elementos verticalmente en dispositivos móviles */
+      }
+      
+      .texto, .mapa {
+        width: 100%; /* Ocupa todo el ancho del contenedor padre */
+      }
+      .mapa img{
+        width: 100%;
+       
+        
+      }
+    .texto h2{
+        font-size: 50px;
+        margin-top: 100px;
+     
+       
+        
+    }
+    .texto p{
+        font-size: 22px;
+    }
+
+    /*FORMULARIO*/
+    .contacto{
+        height: auto;
+    }
+    .columna-izquierda h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .columna-izquierda h4{
+        font-size: 22px;
+        
+    }
+    .columna-derecha {
+        width: 100%;
+        height:auto;
+         /* Ajusta el ancho según tus necesidades */
+        background:linear-gradient(#4d4d4d, #717070)  ;
+        margin-bottom: 200px;
+        margin-top: 200px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+      }
+    
+      .label1{
+        font-size: 20px;
+       
+      
+      }
+      .form-check-input{
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+      }
+      .form-check-label{
+        font-size: 18px;
+       
+      }
+      .col .form-control{
+        font-size: 18px;
+      }
+      .form-group .form-control{
+        font-size: 18px;
+      }
+    
+      .contacto .btn{
+        font-size: 20px;
+        
+        
+      }
+
+      /*COMPRA Y VENTA FINAL*/
+      .botonesfinal{
+
+
+        padding-right: 25px;
+      }
+      .boton1final{
+        width:250px;
+        font-size: 18px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+       }
+       .boton2final{
+        width:250px;
+        font-size: 18px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+       
+       }
+      .subtitulo-patrocinadores{
+        font-size: 40px;
+        font-weight: bold;
+        
+        margin: 0;
+        
+      }
+   
+    
+      .fondo {
+        height: auto;
+      }
+      .sesgoabajo-unico{
+        display: none;
+      }
+      .mapa{
+        order: 2;
+      
+           }
+           .texto{
+            order:1;
+           
+           }
+    .mapa-container{
+        width: 100%;
+    }
+    .acerca-de{
+        margin-bottom: 100px;
+    }
+   
+ }
+ @media screen and (max-width:980px){
+   .mapa{
+order: 2;
+margin-right: 300px;
+
+
+   }
+   .texto{
+    order:1;
+    padding-left: 30px;
+   }
+   .fondo{
+    padding-bottom: 100px;
+   } 
+   .mapa-container{
+    width: 100%;
+    margin-left: 0;
+}
+ 
+  
+  
+    #whatsapp img{
+        width:  100px;
+        height: 100px;
+        }
+    header{
+        height: 200px;
+    }
+    
+    header .logo img{
+        width: 570px;
+    }
+    
+    
+    .nav-responsive i{
+      font-size: 60px;
+     
+    }
+    .botonnav1{
+        width: 350px;
+        padding: 30px;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .botonnav2{
+        width: 350px;
+        margin-bottom: 20px;
+        padding: 30px;
+        border-radius: 50px;
+        margin-left: 30px;
+        font-size: 50px;
+        
+    }
+   
+  
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+     
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 250px;
+        background-color: #fff;
+        width: 600px;
+        height:auto;
+        border: 2px solid #04b7b7;
+        border-radius: 50px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+      
+      
+        
+    }
+    nav.responsive ul li {
+        font-size: 50px;
+     
+        padding: 30px;
+        
+        
+       
+    }
+    
+    .contenedor-header header nav ul li a{
+        font-size: 50px;
+    }
+    .contenedor-header header {
+        max-width: 100%;
+        height: 250px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 80px;
+        
+    }
+    /*PANTALLA INICIO*/
+    .inicio .textos {
+        margin-top: 30% ;
+        color:#faf6f6;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30%;
+    
+    }
+    
+    .inicio{
+        width: 100% ;
+        height:auto ;
+    }
+    
+    .inicio .titulo {
+        font-size: 85px ;
+
+        
+    }
+    
+    .inicio .subtitulo {
+        font-size: 90px ;
+        font-weight: 300;
+        margin-bottom: 30px ;
+        padding-top: 30px;
+        
+       
+        
+    }
+    .inicio p{
+        font-size: 45px; 
+        margin-top: 100px;
+       
+    }
+    .botones{
+        margin-top: 90px;
+        gap:60px;
+       
+       
+        
+    }
+   .sesgoabajo{
+    display: none;
+   }
+   
+   .boton1{
+    width:100%;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+   }
+   .boton2{
+    width:100%;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+   
+   }
+
+   /*TRASPASAR FARMACIA*/
+   .card10 {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 400px; /* Define la altura deseada para el contenedor */
+    /* Puedes ajustar la altura según tus necesidades */
+    text-align: center; /* Opcional: centrar la imagen horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cards10{
+   
+ 
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.card10 .card-image {
+    width: 100%;
+}
+  .card10 .card-image img {
+    width: 100%; 
+ 
+   
+  object-fit: contain; 
+    
+  
+    transition: transform 0.3s;
+  }
+  .sesgoarriba{
+    display: none;
+
+  }
+ 
+.venta{
+    
+    font-size: 65px ;
+    font-weight: bold;
+    margin-left: 0;
+}
+.ventap{
+    
+    font-size: 40px ;
+    padding: 0;
+    margin: 0;
+    
+  
+}
+.boton4{
+    width: 500px;
+    font-size: 35px;
+    padding: 30px;
+    margin-bottom: 20%;
+
+}
+
+/*GALERIA DE FOTOS FARMACIA*/
+.galeria{
+    height: auto;
+}
+.imagenes{
+    height: 100%;
+}
+.encima1{
+    height: 900px;
+}
+.encima{
+    height: 900px;
+}
+.imagenes img{
+    height: 900px;
+}
+
+/*MAPA*/
+.mapa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    
+  }
+  
+  
+  .mapa img{
+    width: 100%;
+   
+    
+  }
+  .texto h2{
+    font-size: 65px;
+    font-weight: 300;
+    padding: 10px;
+   
+  }
+  .texto p{
+    font-size: 40px;
+    padding: 20px;
+  }
+  .boton3{
+    width: 500px;
+    font-size: 35px;
+    padding: 30px;
+}
+
+/*SERVICIOS*/
+  .fondo {
+    height: auto;
+    background:linear-gradient(rgba(49, 49, 49, 0.759), rgba(51, 51, 51, 0.579)),url(img/1.jpg);
+    
+  }
+  .container .card{
+    width: 700px;
+    height: 550px;
+    background: #5e5f5f9f;
+    
+   
+    
+  
+   
+}
+#trabajo{
+    font-size: 60px;
+    font-weight: bold;
+}
+.flip-card-front img {
+    object-fit: cover;
+    width: 700px;
+   
+}
+.flip-card-back h5{
+    
+    font-size:  36px;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .flip-card-back h4{
+    
+    font-size:  44px;
+    margin: 0;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    
+  }
+   .card-link{
+    font-size: 30px;
+  
+   
+   }
+
+   /*FORMULARIO*/
+   .contacto{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.columna-izquierda{
+   
+    width: 100%;
+    text-align: left; /* Añadir esta línea para justificar el texto a la izquierda */
+    padding: 2%;
+    margin-top: 5%;
+    left: 0;
+    color: #757575;
+    text-align: left; /* Añadir esta línea para justificar el texto a la izquierda */
+    padding: 6%;
+  
+    flex: 1;
+}
+.columna-derecha{
+    width: 100%;
+    height:auto;
+     /* Ajusta el ancho según tus necesidades */
+    background:linear-gradient(#4d4d4d, #717070)  ;
+   margin-bottom: 150px;
+  
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+   
+    width:85%;
+    padding: 6%;
+    
+
+}
+
+.columna-izquierda h1{
+    font-size: 65px;
+}
+.columna-izquierda h4{
+    font-size: 40px;
+}
+ 
+
+  .label1{
+    font-size: 42px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .form-check-input{
+    font-size: 35px;
+  }
+  .form-check-label{
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .col .form-control{
+    font-size: 42px;
+  }
+  .form-group .form-control{
+    font-size: 42px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .contacto .btn{
+    font-size: 42px;
+    padding: 30px;
+    border-radius: 15px;
+    
+  }
+  
+   .botones {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .botones h3,
+    .botones a {
+        margin: 0; /* Elimina los márgenes para un mejor espaciado */
+    }
+    .subtitulo-patrocinadores{
+        font-size: 65px;
+        margin: 10px;
+       padding: 116px;
+       
+        
+    }
+    .fondofinal {
+        height: auto;
+        position: relative;
+        background:linear-gradient(rgba(5, 7, 12, 0.709), rgba(5, 7, 12, 0.747)),url(img/1.jpg);
+       
+        overflow: hidden;
+        background-attachment: fixed;
+        background-position: center;
+       
+    }
+    .botonesfinal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+    .boton1final{
+        width:600px;
+        font-size: 35px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+       }
+       .boton2final{
+        width:600px;
+        font-size: 35px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+       
+       }
+/*FOOTER*/
+footer i{
+    font-size: 55px;
+   }
+   footer .arriba{
+      width: 80px;
+      height: 80px;
+      padding: 10px;
+   }
+  .row .col-2 {
+    width: 100%;
+    font-size: 30px;
+   
+   
+  }
+ 
+  
+  .row .col-3{
+    width: 100%;
+    font-size: 30px;
+  }
+  .row p{
+    
+    font-size: 42px;
+  }
+   .row .col-1{
+   width: 20%;
+   font-size: 30px;
+   padding: 50px;
+   }
+  
+    .nombre-ano p{
+       font-size: 25px;
+   }
+
+   #whatsapp img{
+    width: 100px;
+    height: 100px;
+}
+
+  
+
+ }
+  
+ @media screen and (max-width: 767px) {
+   
+   
+    #whatsapp img{
+        width:  50px;
+        height: 50px;
+        }
+   
+    
+    .logo img{
+        width: 200px;
+    }
+    
+    .nav-responsive{
+        width: 47px;
+        height: 40px;
+    }
+    .nav-responsive i{
+      font-size: 23px;
+      padding: 2px;
+    }
+    .botonnav1{
+        width: 150px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+       
+        font-size: 20px;
+    }
+    .botonnav2{
+        width: 150px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 20px;
+       
+        font-size: 20px;
+        
+    }
+  
+    .contenedor-header header nav ul li {
+        font-size: 10px;
+    }
+    .contenedor-header header nav ul li a{
+        padding: 5px;
+        font-size: 20px;
+    }
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+     
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #f7f8f9;
+        width: auto;
+        height: 350px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+        height: 350px;
+        
+    }
+    nav.responsive ul li {
+        font-size: 16px;
+        border-bottom: 1px solid #fff;
+        padding: 10px;
+        
+        
+       
+    }
+    
+    .contenedor-header header nav ul li a{
+        font-size: 20px;
+    }
+  
+}
+ 
+ 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
